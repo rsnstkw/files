@@ -7,19 +7,19 @@ services:
         networks:
             - app-network
         ports:
-        - 9000:9000
+            - 9000:9000
+        deploy:
+            replicas: 3
     nginx:
         image: rsnstkw/nginx
         volumes:
             - ./web-db/web/:/var/www/html/
-        deploy:
-            replicas: 3
         ports:
             - 8080:80
         networks:
             - app-network
-        links:
-            - php
+        depends_on:
+            - 'php'
     db:
         image: rsnstkw/db
         networks:
@@ -28,8 +28,8 @@ services:
             MYSQL_ROOT_PASSWORD: 12345
         ports:
             - 3306:3306
-        links:
-            - nginx
-            - php
+        depends_on:
+            - 'nginx'
+            - 'php'
 networks:
     app-network:
