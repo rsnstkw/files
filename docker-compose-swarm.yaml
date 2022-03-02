@@ -2,12 +2,18 @@ version: "3.8"
 services:
     web:
         image: rsnstkw/web
+        volumes:
+            - /home/vagrant/web-db/web:/usr/share/nginx/html
+        networks:
+            - app-network
+    nginx:
+        image: nginx:alpine
+        volumes:
+            - ./web-db/web/:/var/www/html/
         deploy:
             replicas: 3
         ports:
             - 8080:80
-        volumes:
-            - /home/vagrant/web-db/web:/usr/share/nginx/html:ro
         networks:
             - app-network
     db:
