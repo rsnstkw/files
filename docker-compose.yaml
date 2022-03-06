@@ -3,7 +3,7 @@ services:
     php:
         image: rsnstkw/web
         volumes:
-            - ./web:/var/www/html
+            - ./web-db/web:/var/www/html
         networks:
             - app-network
         ports:
@@ -11,9 +11,9 @@ services:
     nginx:
         image: rsnstkw/nginx
         volumes:
-            - ./web/:/var/www/html/
+            - ./web-db/web/:/var/www/html/
         ports:
-            - 8081:80
+            - 8080:80
         networks:
             - app-network
         depends_on:
