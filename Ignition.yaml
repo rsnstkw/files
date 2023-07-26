@@ -1,0 +1,335 @@
+variant: fcos
+version: 1.5.0
+passwd:
+  users:
+    - name: rstoykov
+      ssh_authorized_keys:
+        - ssh-rsa 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
+      groups:
+        - wheel
+        - sudo
+systemd:
+  units:
+    - name: postinst.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Initial System Setup
+        # We run after `systemd-machine-id-commit.service` to ensure that
+        # `ConditionFirstBoot=true` services won't rerun on the next boot.
+        After=systemd-machine-id-commit.service
+        After=network-online.target
+        # We run before `zincati.service` to avoid conflicting rpm-ostree
+        # transactions.
+        Before=zincati.service
+        ConditionPathExists=!/var/lib/%N.stamp
+
+        [Service]
+        Type=oneshot
+        RemainAfterExit=yes
+        ExecStart=/usr/bin/sed -i 's/#DNSSEC=no/DNSSEC=yes/g' /etc/systemd/resolved.conf
+        ExecStart=/usr/bin/systemctl restart systemd-resolved
+        ExecStart=/usr/bin/rpm-ostree install firewalld qemu-guest-agent tuned unbound
+        ExecStart=/usr/bin/rpm-ostree override remove cifs-utils samba-common-libs samba-client-libs libsmbclient libwbclient samba-common sssd-krb5-common sssd-ipa sssd-nfs-idmap sssd-ldap sssd-client sssd-ad sssd-common sssd-krb5 sssd-common-pac
+        ExecStart=/usr/bin/sed -i 's/nullok//g' /etc/pam.d/system-auth
+        ExecStart=/usr/bin/curl https://raw.githubusercontent.com/Kicksecure/security-misc/master/etc/modprobe.d/30_security-misc.conf -o /etc/modprobe.d/30_security-misc.conf
+        ExecStart=/usr/bin/curl https://raw.githubusercontent.com/Kicksecure/security-misc/master/etc/sysctl.d/30_security-misc.conf -o /etc/sysctl.d/30_security-misc.conf
+        ExecStart=/usr/bin/sed -i 's/kernel.yama.ptrace_scope=2/kernel.yama.ptrace_scope=1/g' /etc/sysctl.d/30_security-misc.conf
+        ExecStart=/usr/bin/sed -i 's/net.ipv4.icmp_echo_ignore_all=1/net.ipv4.icmp_echo_ignore_all=0/g' /etc/sysctl.d/30_security-misc.conf
+        ExecStart=/usr/bin/sed -i 's/net.ipv6.icmp.echo_ignore_all=1/net.ipv6.icmp.echo_ignore_all=0/g' /etc/sysctl.d/30_security-misc.conf
+        ExecStart=/usr/bin/curl https://raw.githubusercontent.com/Kicksecure/security-misc/master/etc/sysctl.d/30_silent-kernel-printk.conf -o /etc/sysctl.d/30_silent-kernel-printk.conf
+        ExecStart=/usr/bin/curl https://raw.githubusercontent.com/Kicksecure/security-misc/master/etc/sysctl.d/30_security-misc_kexec-disable.conf -o /etc/sysctl.d/30_security-misc_kexec-disable.conf
+        ExecStart=/usr/bin/curl https://raw.githubusercontent.com/GrapheneOS/infrastructure/main/chrony.conf -o /etc/chrony.conf
+        ExecStart=/usr/bin/mkdir -p /etc/systemd/system/NetworkManager.service.d
+        ExecStart=/usr/bin/curl https://gitlab.com/divested/brace/-/raw/master/brace/usr/lib/systemd/system/NetworkManager.service.d/99-brace.conf -o /etc/systemd/system/NetworkManager.service.d/99-brace.conf
+        ExecStart=/usr/bin/mkdir -p /etc/systemd/system/irqbalance.service.d
+        ExecStart=/usr/bin/curl https://gitlab.com/divested/brace/-/raw/master/brace/usr/lib/systemd/system/irqbalance.service.d/99-brace.conf -o /etc/systemd/system/irqbalance.service.d/99-brace.conf
+        ExecStart=/usr/bin/mkdir -p /etc/systemd/system/sshd.service.d
+        ExecStart=/usr/bin/curl https://raw.githubusercontent.com/GrapheneOS/infrastructure/main/systemd/system/sshd.service.d/limits.conf -o /etc/systemd/system/sshd.service.d/limits.conf
+        ExecStart=/bin/systemctl disable systemd-resolved
+        ExecStart=/bin/touch /var/lib/%N.stamp
+        ExecStart=/bin/systemctl --no-block reboot
+
+        [Install]
+        WantedBy=multi-user.target
+    - name: postinst2.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=Initial System Setup Part 2
+        # We run this after the packages have been overlayed
+        After=network-online.target
+        ConditionPathExists=!/var/lib/%N.stamp
+        ConditionPathExists=/var/lib/postinst.stamp
+
+        [Service]
+        Type=oneshot
+        RemainAfterExit=yes
+        ExecStart=/usr/bin/docker run --detach --privileged --name watchtower --restart unless-stopped --runtime=runc -v /var/run/docker.sock:/var/run/docker.sock -v /etc/localtime:/etc/localtime:ro containrrr/watchtower --schedule "0 15 0 * * 0"
+        ExecStart=/bin/touch /var/lib/%N.stamp
+
+        [Install]
+        WantedBy=multi-user.target
+    - name: setsebool.service
+      enabled: true
+      contents: |
+        [Service]
+        Type=oneshot
+        ExecStart=/usr/sbin/setsebool container_use_cephfs off
+        ExecStart=/usr/sbin/setsebool virt_use_nfs off
+        ExecStart=/usr/sbin/setsebool virt_use_samba off
+        RemainAfterExit=yes
+        [Install]
+        WantedBy=multi-user.target
+    - name: gvisor-updater.service
+      enabled: true
+      contents: |
+        [Unit]
+        Description=gVisor Update
+        Requires=network-online.target
+        Before=docker.service
+
+        [Service]
+        WorkingDirectory=/var/roothome
+        Type=oneshot
+        ExecStart=/usr/bin/sleep 5
+        ExecStart=/usr/bin/curl -O https://storage.googleapis.com/gvisor/releases/release/latest/x86_64/runsc
+        ExecStart=/usr/bin/curl -O https://storage.googleapis.com/gvisor/releases/release/latest/x86_64/runsc.sha512
+        ExecStart=/usr/bin/curl -O https://storage.googleapis.com/gvisor/releases/release/latest/x86_64/containerd-shim-runsc-v1
+        ExecStart=/usr/bin/curl -O https://storage.googleapis.com/gvisor/releases/release/latest/x86_64/containerd-shim-runsc-v1.sha512
+        ExecStart=/usr/bin/sha512sum -c runsc.sha512 -c containerd-shim-runsc-v1.sha512
+        ExecStart=/usr/bin/rm -f runsc.sha512 containerd-shim-runsc-v1.sha512
+        ExecStart=/usr/bin/chmod a+rx runsc containerd-shim-runsc-v1
+        ExecStart=/usr/bin/mv runsc containerd-shim-runsc-v1 /var/usrlocal/bin
+        ExecStart=/usr/bin/chcon system_u:object_r:container_runtime_exec_t:s0 /var/usrlocal/bin/runsc
+
+        [Install]
+        WantedBy=multi-user.target
+    - name: docker.service
+      enabled: true
+    - name: fstrim.timer
+      enabled: true
+    - name: systemd-oomd.service
+      enabled: true
+    - name: rpm-ostree-countme.timer
+      enabled: false
+      mask: true
+    - name: sshd.service
+      enabled: false
+    - name: sshd.socket
+      enabled: true
+storage:
+  files:
+    - path: /etc/ssh/sshd_config.d/10-custom.conf
+      contents:
+        inline: |
+          X11Forwarding no
+          GSSAPIAuthentication no
+    - path: /etc/zincati/config.d/51-rollout-wariness.toml
+      contents:
+        inline: |
+          [identity]
+          rollout_wariness = 0
+    - path: /etc/zincati/config.d/55-updates-strategy.toml
+      contents:
+        inline: |
+          [updates]
+          strategy = "periodic"
+          [updates.periodic]
+          time_zone = "localtime"
+          [[updates.periodic.window]]
+          days = [ "Sun" ]
+          start_time = "0:00"
+          length_minutes = 60
+    - path: /etc/tuned/active_profile
+      overwrite: true
+      contents:
+        inline: |
+          virtual-guest
+    - path: /etc/tuned/profile_mode
+      overwrite: true
+      contents:
+        inline: |
+          manual
+    - path: /etc/systemd/zram-generator.conf
+      overwrite: true
+      contents:
+        inline: |
+          # This config file enables a /dev/zram0 device with the default settings
+          [zram0]
+          zram-fraction = 1
+          max-zram-size = 8192
+    - path: /etc/security/limits.d/30-disable-coredump.conf
+      overwrite: true
+      contents:
+        inline: |
+          * hard core 0
+    - path: /etc/ssh/ssh_config.d/10-custom.conf
+      overwrite: true
+      contents:
+        inline: |
+          GSSAPIAuthentication no
+          VerifyHostKeyDNS yes
+    - path: /etc/unbound/unbound.conf
+      overwrite: true
+      contents:
+        inline: |
+          server:
+            chroot: ""
+
+            auto-trust-anchor-file: "/var/lib/unbound/root.key"
+            trust-anchor-signaling: yes
+            root-key-sentinel: yes
+
+            tls-cert-bundle: /etc/ssl/certs/ca-certificates.crt
+            tls-ciphers: "PROFILE=SYSTEM"
+
+            hide-http-user-agent: yes
+            hide-identity: yes
+            hide-trustanchor: yes
+            hide-version: yes
+
+            deny-any: yes
+            harden-algo-downgrade: yes
+            harden-large-queries: yes
+            harden-referral-path: yes
+            harden-short-bufsize: yes
+            ignore-cd-flag: yes
+            max-udp-size: 3072
+            module-config: "validator iterator"
+            qname-minimisation-strict: yes
+            unwanted-reply-threshold: 10000000
+            use-caps-for-id: yes
+
+            outgoing-port-permit: 1024-65535
+
+            prefetch: yes
+            prefetch-key: yes
+
+          forward-zone:
+            name: "."
+            forward-tls-upstream: yes
+            forward-addr: 1.1.1.1@853#cloudflare-dns.com
+            forward-addr: 1.0.0.1@853#cloudflare-dns.com
+            forward-addr: 2606:4700:4700::1111@853#cloudflare-dns.com
+            forward-addr: 2606:4700:4700::1001@853#cloudflare-dns.com
+    - path: /etc/systemd/system/unbound.service.d/override.conf
+      contents:
+        inline: |
+          [Service]
+          MemoryDenyWriteExecute=true
+          PrivateDevices=true
+          PrivateTmp=true
+          ProtectHome=true
+          ProtectClock=true
+          ProtectControlGroups=true
+          ProtectKernelLogs=true
+          ProtectKernelModules=true
+          # This breaks using socket options like 'so-rcvbuf'. Explicitly disable for visibility.
+          ProtectKernelTunables=true
+          ProtectProc=invisible
+          RestrictAddressFamilies=AF_INET AF_INET6 AF_NETLINK AF_UNIX
+          RestrictRealtime=true
+          SystemCallArchitectures=native
+          SystemCallFilter=~@clock @cpu-emulation @debug @keyring @module mount @obsolete @resources
+          RestrictNamespaces=yes
+          LockPersonality=yes
+    - path: /etc/docker/daemon.json
+      contents:
+        inline: |
+          {
+              "default-runtime": "runsc-systrap",
+              "runtimes": {
+                  "runsc-systrap": {
+                      "path": "/var/usrlocal/bin/runsc",
+                      "runtimeArgs": [
+                          "--platform=systrap",
+                          "--network=host"
+                      ]
+                  },
+                  "runsc-ptrace": {
+                      "path": "/var/usrlocal/bin/runsc",
+                      "runtimeArgs": [
+                          "--platform=ptrace",
+                          "--network=host"
+                      ]
+                  },
+                  "runsc-kvm": {
+                      "path": "/var/usrlocal/bin/runsc",
+                      "runtimeArgs": [
+                          "--platform=kvm",
+                          "--network=host"
+                      ]
+                  }
+              }
+          }
+  links:
+    - path: /etc/localtime
+      target: ../usr/share/zoneinfo/America/New_York
+    - path: /etc/systemd/system/multi-user.target.wants/unbound.service
+      target: /usr/lib/systemd/system/unbound.service
+    - path: /etc/systemd/system/multi-user.target.wants/tuned.service
+      target: /usr/lib/systemd/system/tuned.service
+    - path: /etc/systemd/system/kdump.service.target
+      target: /dev/null
+kernel_arguments:
+  should_exist:
+    - spectre_v2=on
+    - spec_store_bypass_disable=on
+    - l1tf=full,force
+    - mds=full,nosmt
+    - tsx=off
+    - tsx_async_abort=full,nosmt
+    - kvm.nx_huge_pages=force
+    - nosmt=force
+    - l1d_flush=on
+    - mmio_stale_data=full,nosmt
+    - random.trust_bootloader=off
+    - random.trust_cpu=off
+    - intel_iommu=on
+    - amd_iommu=on
+    - iommu.passthrough=0 iommu.strict=1
+    - slab_nomerge
+    - init_on_alloc=1
+    - init_on_free=1
+    - pti=on
+    - vsyscall=none
+    - page_alloc.shuffle=1
+    - randomize_kstack_offset=on
+    - extra_latent_entropy
+    - debugfs=off
