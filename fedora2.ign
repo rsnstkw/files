@@ -36,9 +36,9 @@
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nDescription=Open VM Tools\nAfter=network-online.target\nWants=network-online.target\n\n[Service]\nTimeoutStartSec=0\nExecStartPre=-/bin/podman kill open-vm-tools\nExecStartPre=-/bin/podman rm open-vm-tools\nExecStartPre=/bin/podman pull open-vm-tools:fc31\nExecStart=/bin/podman run -e SYSTEMD_IGNORE_CHROOT=1 -v  /proc/:/hostproc/ -v /sys/fs/cgroup:/sys/fs/cgroup -v /run/systemd:/run/systemd --pid=host --net=host --ipc=host --uts=host --rm  --privileged --name open-vm-tools open-vm-tools:fc31\n\n[Install]\nWantedBy=multi-user.target\n",
+        "contents": "[Unit]\nDescription=Post Installation\nAfter=network-online.target\nWants=network-online.target\n\n[Service]\nTimeoutStartSec=0\nExecStart=/bin/bash -c \"/bin/rpm-ostree install open-vm-tools nrpe \u0026\u0026 reboot || /bin/true\"\n\n[Install]\nWantedBy=multi-user.target\n",
         "enabled": true,
-        "name": "open-vm-tools.service"
+        "name": "postinstall.service"
       }
     ]
   }
