@@ -26,8 +26,8 @@
       {
         "path": "/etc/NetworkManager/system-connections/ens33.nmconnection",
         "contents": {
-          "compression": "",
-          "source": "data:,%5Bconnection%5D%0Aid%3Dens33%0Atype%3Dethernet%0Ainterface-name%3Dens33%0A%5Bipv4%5D%0Aaddress1%3D192.168.30.10%2F24%0Agateway%3D192.168.30.1%0Adns%3D1.1.1.1%0A"
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/0TKQarDMAyE4b3O8pLXNNkVnSRkIewJNthysNRCbl9aWsrM5oN/DU0VwXPTjXJkqM0z+XmA4Qld4ZTV0XcJGFQqPsmaj8eykcTYYTbxdBm//78ufz9SVONpfO/2wmCQHhJTlXPYJRfepRiowlOLXEXvUugZAAD//yxKG9KZAAAA"
         },
         "mode": 384
       }
