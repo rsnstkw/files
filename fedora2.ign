@@ -27,18 +27,37 @@
         "path": "/etc/NetworkManager/system-connections/ens33.nmconnection",
         "contents": {
           "compression": "gzip",
-          "source": "data:;base64,H4sIAAAAAAAC/0yKwcqDMBAG7/ssv/kblVIp+yTiYUk+MWA2kmwLvn1p6aHMaYaZQ1FFsFR0oRQZ2oaB7DzAsA1VYZTUUFcJ6FQyvsucjue4kMRY0ZpnP/XOX2+u9xc3/ffj32/wFLWxdx/ub+kapIaNKcvZrZJ2XmVvoAzbSuQs+pCdXgEAAP//DVFalJ4AAAA="
+          "source": "data:;base64,H4sIAAAAAAAC/0zKwcqDMBAE4Ps+y2/+RkNRyj6JeFiSEQNmlSQt+PaloYfyHQZmZvaHKnyNhy4UA0PLMFC9TjDqhqyoFLUir+LRqSR8L3M8X24hCSGjFMt26o29j6a3NzP99+7vt7AUtLA1zWM0TUtn3GfrCiT7jSnJ1a0Sd15lL6CEuh2Bk+hTdnoHAAD//8mLmCytAAAA"
         },
         "mode": 384
+      }
+    ],
+    "filesystems": [
+      {
+        "device": "/dev/disk/by-partlabel/root",
+        "format": "ext4",
+        "label": "root",
+        "wipeFilesystem": true
+      }
+    ],
+    "links": [
+      {
+        "path": "/etc/localtime",
+        "target": "../usr/share/zoneinfo/Europe/Sofia"
       }
     ]
   },
   "systemd": {
     "units": [
       {
-        "contents": "[Unit]\nDescription=Post Installation\nAfter=network-online.target\nWants=network-online.target\n\n[Service]\nTimeoutStartSec=0\nExecStart=/bin/bash -c \"/bin/rpm-ostree install open-vm-tools nrpe \u0026\u0026 reboot || /bin/true\"\n\n[Install]\nWantedBy=multi-user.target\n",
+        "contents": "[Unit]\nDescription=Post Installation\nAfter=network-online.target\nWants=network-online.target\n\n[Service]\nTimeoutStartSec=0\nExecStart=/bin/bash -c \"/bin/rpm-ostree install open-vm-tools nrpe \u0026\u0026 reboot || /bin/true\"\nExecStart=/bin/bash/systemctl enable vmtoolsd.service \u0026\u0026 systemctl start vmtoolsd.service\n\n[Install]\nWantedBy=multi-user.target\n",
         "enabled": true,
         "name": "postinstall.service"
+      },
+      {
+        "contents": "[Unit]\nDescription=Layer vim with rpm-ostree\nWants=network-online.target\nAfter=network-online.target\nBefore=zincati.service\nConditionPathExists=!/var/lib/%N.stamp\n\n[Service]\nType=oneshot\nRemainAfterExit=yes\nExecStart=/usr/bin/rpm-ostree install --apply-live --allow-inactive vim\nExecStart=/bin/touch /var/lib/%N.stamp\n\n[Install]\nWantedBy=multi-user.target\n",
+        "enabled": true,
+        "name": "rpm-ostree-install-vim.service"
       }
     ]
   }
